@@ -17,6 +17,9 @@ xcuserdata/
 *.xcworkspace/xcuserdata/
 *.xcworkspace/xcshareddata/
 
+# === Xcodeスキーム（環境変数にAPIキーが含まれるため）===
+*.xcodeproj/xcshareddata/xcschemes/
+
 # === SPM ===
 .build/
 .swiftpm/
