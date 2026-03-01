@@ -1,0 +1,613 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01EFE8FA802EEAC3D546850F /* TopicSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A981DD1D99B9375A3A8CB07 /* TopicSelectorView.swift */; };
+		0C9493D479D0EF87B8593BF4 /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDAA13E0C52029BE38389AD /* ChatViewModel.swift */; };
+		1263264D4D562750EF19E945 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F21662917408351F51A4B3 /* Constants.swift */; };
+		241C532B7B7604F010AD6F46 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B716EAD028B05711B751B85 /* ChatView.swift */; };
+		3A16966039CC6B6794749E17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F5481EF64F57EF437D6C605 /* Assets.xcassets */; };
+		3B54301C7D963687DE4CD11D /* honneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDFF329B69545F385D36BA72 /* honneTests.swift */; };
+		4A07B8AA2BC13C181730D72F /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D231649CC16DA1329C26A82 /* Message.swift */; };
+		4F996C75FB885D99CD9BE0C7 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D92ADF5496DBFCC9A23115 /* HomeView.swift */; };
+		563ED46333B032E0885E63EE /* MessageBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6EA9BCAB9EB2205E9759E5 /* MessageBubble.swift */; };
+		5D12DDAB4C698CEE2BACD9CE /* honneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7876B01EE741BF9AA615B55D /* honneApp.swift */; };
+		7291318BBC5024968B957A90 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55870B0E7EF1683B4C8FCB1 /* OnboardingViewModel.swift */; };
+		7D8941D07F4CB8F638422036 /* SafetyFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC7CB6982A3084569343B41 /* SafetyFilter.swift */; };
+		81B226F113BAB2130C5BEB15 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E4B966D6119E333319F829 /* HomeViewModel.swift */; };
+		8507F3B4E9DA35951D079D18 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E943E6A7F0EFC0DEC0FA9F14 /* Extensions.swift */; };
+		87828961DF9098972B2B1E41 /* OpenAIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1274BE8DC0111EF059D0751 /* OpenAIService.swift */; };
+		8AE394E315ABAF48C1904A6F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33D04302D6A284EA1D81036 /* ContentView.swift */; };
+		A2DBAAB1754E7C797E6BED83 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = F963004AE9D4A1777868F2C3 /* Session.swift */; };
+		ADF8AF073BAE2BA8249B634E /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF0824CC9BCEAEDB63B2DF1 /* StorageService.swift */; };
+		B748A5462F52C1F8004A3894 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B748A5452F52C1F8004A3894 /* AuthService.swift */; };
+		BC0BBAA7C12861880D03302B /* TypingIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11BB393CB0A2ED19E0F29B0 /* TypingIndicatorView.swift */; };
+		BE092B79941A6A85DD11A053 /* EmotionTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3197BF0C553878398150CF29 /* EmotionTag.swift */; };
+		C0A0944D68CB43B63C066579 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D42A4B41F6FB326345E5CA /* OnboardingView.swift */; };
+		D41E28FBF8D4D70D7457D59E /* UserState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1C82B6F439E335322DB6FB /* UserState.swift */; };
+		D4B96F2B587448285650C1D5 /* PaywallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A108BF224AC28F1FDA983AEF /* PaywallView.swift */; };
+		A1B2C3D4E5F6A1B2C3D4E5F6 /* VentEffectSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E2D3C4B5A6F1E2D3C4B5A6 /* VentEffectSystem.swift */; };
+		A1B2C3D4E5F6A1B2C3D4E600 /* VentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E2D3C4B5A6F1E2D3C4B500 /* VentView.swift */; };
+		A1B2C3D4E5F6A1B2C3D4E601 /* VentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E2D3C4B5A6F1E2D3C4B501 /* VentViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		70C26A96A729E800F11DE22A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6DDE49FD5117894CCAE3C890 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9AA5EC60E17342F8A6ADA8C3;
+			remoteInfo = honne;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00D42A4B41F6FB326345E5CA /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		0AF213504E5F40B4780D13B6 /* honneTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = honneTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F5481EF64F57EF437D6C605 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1407536718E24D528108FC5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		1A981DD1D99B9375A3A8CB07 /* TopicSelectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicSelectorView.swift; sourceTree = "<group>"; };
+		1AC7CB6982A3084569343B41 /* SafetyFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafetyFilter.swift; sourceTree = "<group>"; };
+		2D231649CC16DA1329C26A82 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		2E1C82B6F439E335322DB6FB /* UserState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserState.swift; sourceTree = "<group>"; };
+		3197BF0C553878398150CF29 /* EmotionTag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotionTag.swift; sourceTree = "<group>"; };
+		3AF0824CC9BCEAEDB63B2DF1 /* StorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
+		49E4B966D6119E333319F829 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		4EF6AE2B8248C83BA5A4D1B3 /* honne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = honne.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FDAA13E0C52029BE38389AD /* ChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewModel.swift; sourceTree = "<group>"; };
+		69F21662917408351F51A4B3 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		7876B01EE741BF9AA615B55D /* honneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = honneApp.swift; sourceTree = "<group>"; };
+		9B716EAD028B05711B751B85 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		9F6EA9BCAB9EB2205E9759E5 /* MessageBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageBubble.swift; sourceTree = "<group>"; };
+		A108BF224AC28F1FDA983AEF /* PaywallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaywallView.swift; sourceTree = "<group>"; };
+		B748A5452F52C1F8004A3894 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		BDFF329B69545F385D36BA72 /* honneTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = honneTests.swift; sourceTree = "<group>"; };
+		D33D04302D6A284EA1D81036 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D3D92ADF5496DBFCC9A23115 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		D55870B0E7EF1683B4C8FCB1 /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
+		E11BB393CB0A2ED19E0F29B0 /* TypingIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypingIndicatorView.swift; sourceTree = "<group>"; };
+		E1274BE8DC0111EF059D0751 /* OpenAIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAIService.swift; sourceTree = "<group>"; };
+		E943E6A7F0EFC0DEC0FA9F14 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		F963004AE9D4A1777868F2C3 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		F1E2D3C4B5A6F1E2D3C4B5A6 /* VentEffectSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VentEffectSystem.swift; sourceTree = "<group>"; };
+		F1E2D3C4B5A6F1E2D3C4B500 /* VentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VentView.swift; sourceTree = "<group>"; };
+		F1E2D3C4B5A6F1E2D3C4B501 /* VentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VentViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		02ED91CFE81FAEA8FACA785E /* Paywall */ = {
+			isa = PBXGroup;
+			children = (
+				A108BF224AC28F1FDA983AEF /* PaywallView.swift */,
+			);
+			path = Paywall;
+			sourceTree = "<group>";
+		};
+		0818585C8B5B3248F0D2BF68 = {
+			isa = PBXGroup;
+			children = (
+				E36AB5002167869BC3052A23 /* honne */,
+				22893B77F95E31E3BAA38143 /* honneTests */,
+				246A759050F2627890498545 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		22893B77F95E31E3BAA38143 /* honneTests */ = {
+			isa = PBXGroup;
+			children = (
+				BDFF329B69545F385D36BA72 /* honneTests.swift */,
+			);
+			path = honneTests;
+			sourceTree = "<group>";
+		};
+		22C7A564B8AFADBFDD61432F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B748A5452F52C1F8004A3894 /* AuthService.swift */,
+				E1274BE8DC0111EF059D0751 /* OpenAIService.swift */,
+				3AF0824CC9BCEAEDB63B2DF1 /* StorageService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		22E2771ACB65C7DD1A5125F6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				894C1380DD5152AE056E8F98 /* Chat */,
+				A6F7E9D04AA5AA12BD5A3CDD /* Home */,
+				41021FDFC3F9C653EA8C92D8 /* Onboarding */,
+				02ED91CFE81FAEA8FACA785E /* Paywall */,
+				AABBCC112233AABBCC112233 /* Vent */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AABBCC112233AABBCC112233 /* Vent */ = {
+			isa = PBXGroup;
+			children = (
+				F1E2D3C4B5A6F1E2D3C4B5A6 /* VentEffectSystem.swift */,
+				F1E2D3C4B5A6F1E2D3C4B500 /* VentView.swift */,
+			);
+			path = Vent;
+			sourceTree = "<group>";
+		};
+		246A759050F2627890498545 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4EF6AE2B8248C83BA5A4D1B3 /* honne.app */,
+				0AF213504E5F40B4780D13B6 /* honneTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		40110BA8AE296367D04CB0B2 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				69F21662917408351F51A4B3 /* Constants.swift */,
+				E943E6A7F0EFC0DEC0FA9F14 /* Extensions.swift */,
+				1AC7CB6982A3084569343B41 /* SafetyFilter.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		41021FDFC3F9C653EA8C92D8 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				00D42A4B41F6FB326345E5CA /* OnboardingView.swift */,
+				1A981DD1D99B9375A3A8CB07 /* TopicSelectorView.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		4AD5746CA1F9971E0173CB90 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				4FDAA13E0C52029BE38389AD /* ChatViewModel.swift */,
+				49E4B966D6119E333319F829 /* HomeViewModel.swift */,
+				D55870B0E7EF1683B4C8FCB1 /* OnboardingViewModel.swift */,
+				F1E2D3C4B5A6F1E2D3C4B501 /* VentViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		894C1380DD5152AE056E8F98 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				9B716EAD028B05711B751B85 /* ChatView.swift */,
+				9F6EA9BCAB9EB2205E9759E5 /* MessageBubble.swift */,
+				E11BB393CB0A2ED19E0F29B0 /* TypingIndicatorView.swift */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		A6F7E9D04AA5AA12BD5A3CDD /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				D3D92ADF5496DBFCC9A23115 /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		AED0747367CFC30D93601E88 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3197BF0C553878398150CF29 /* EmotionTag.swift */,
+				2D231649CC16DA1329C26A82 /* Message.swift */,
+				F963004AE9D4A1777868F2C3 /* Session.swift */,
+				2E1C82B6F439E335322DB6FB /* UserState.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E36AB5002167869BC3052A23 /* honne */ = {
+			isa = PBXGroup;
+			children = (
+				0F5481EF64F57EF437D6C605 /* Assets.xcassets */,
+				D33D04302D6A284EA1D81036 /* ContentView.swift */,
+				7876B01EE741BF9AA615B55D /* honneApp.swift */,
+				1407536718E24D528108FC5E /* Info.plist */,
+				AED0747367CFC30D93601E88 /* Models */,
+				22C7A564B8AFADBFDD61432F /* Services */,
+				40110BA8AE296367D04CB0B2 /* Utils */,
+				4AD5746CA1F9971E0173CB90 /* ViewModels */,
+				22E2771ACB65C7DD1A5125F6 /* Views */,
+			);
+			path = honne;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1EF571DF6C4DB2ECD8703B7D /* honneTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D41FCE01FF8932F61FAF4966 /* Build configuration list for PBXNativeTarget "honneTests" */;
+			buildPhases = (
+				0E68B39C100A215645D7FDB6 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				083486D964D62F44A0767EF7 /* PBXTargetDependency */,
+			);
+			name = honneTests;
+			productName = honneTests;
+			productReference = 0AF213504E5F40B4780D13B6 /* honneTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9AA5EC60E17342F8A6ADA8C3 /* honne */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 26B6B9919C117EAF7C4A31FE /* Build configuration list for PBXNativeTarget "honne" */;
+			buildPhases = (
+				CAF066CB85FF419115BADADD /* Sources */,
+				CFB3B19B61C43E1251ABB2DE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = honne;
+			productName = honne;
+			productReference = 4EF6AE2B8248C83BA5A4D1B3 /* honne.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6DDE49FD5117894CCAE3C890 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					1EF571DF6C4DB2ECD8703B7D = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+					9AA5EC60E17342F8A6ADA8C3 = {
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 4071DD992E49F858E7D012B8 /* Build configuration list for PBXProject "honne" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 0818585C8B5B3248F0D2BF68;
+			packageReferences = (
+				B748A5432F52BBE3004A3894 /* XCRemoteSwiftPackageReference "supabase-swift" */,
+			);
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9AA5EC60E17342F8A6ADA8C3 /* honne */,
+				1EF571DF6C4DB2ECD8703B7D /* honneTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CFB3B19B61C43E1251ABB2DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A16966039CC6B6794749E17 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0E68B39C100A215645D7FDB6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B54301C7D963687DE4CD11D /* honneTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAF066CB85FF419115BADADD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				241C532B7B7604F010AD6F46 /* ChatView.swift in Sources */,
+				0C9493D479D0EF87B8593BF4 /* ChatViewModel.swift in Sources */,
+				1263264D4D562750EF19E945 /* Constants.swift in Sources */,
+				8AE394E315ABAF48C1904A6F /* ContentView.swift in Sources */,
+				BE092B79941A6A85DD11A053 /* EmotionTag.swift in Sources */,
+				B748A5462F52C1F8004A3894 /* AuthService.swift in Sources */,
+				8507F3B4E9DA35951D079D18 /* Extensions.swift in Sources */,
+				4F996C75FB885D99CD9BE0C7 /* HomeView.swift in Sources */,
+				81B226F113BAB2130C5BEB15 /* HomeViewModel.swift in Sources */,
+				4A07B8AA2BC13C181730D72F /* Message.swift in Sources */,
+				563ED46333B032E0885E63EE /* MessageBubble.swift in Sources */,
+				C0A0944D68CB43B63C066579 /* OnboardingView.swift in Sources */,
+				7291318BBC5024968B957A90 /* OnboardingViewModel.swift in Sources */,
+				87828961DF9098972B2B1E41 /* OpenAIService.swift in Sources */,
+				D4B96F2B587448285650C1D5 /* PaywallView.swift in Sources */,
+				7D8941D07F4CB8F638422036 /* SafetyFilter.swift in Sources */,
+				A2DBAAB1754E7C797E6BED83 /* Session.swift in Sources */,
+				ADF8AF073BAE2BA8249B634E /* StorageService.swift in Sources */,
+				01EFE8FA802EEAC3D546850F /* TopicSelectorView.swift in Sources */,
+				BC0BBAA7C12861880D03302B /* TypingIndicatorView.swift in Sources */,
+				D41E28FBF8D4D70D7457D59E /* UserState.swift in Sources */,
+				5D12DDAB4C698CEE2BACD9CE /* honneApp.swift in Sources */,
+				A1B2C3D4E5F6A1B2C3D4E5F6 /* VentEffectSystem.swift in Sources */,
+				A1B2C3D4E5F6A1B2C3D4E600 /* VentView.swift in Sources */,
+				A1B2C3D4E5F6A1B2C3D4E601 /* VentViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		083486D964D62F44A0767EF7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9AA5EC60E17342F8A6ADA8C3 /* honne */;
+			targetProxy = 70C26A96A729E800F11DE22A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		37ACBF1E60D816F69D1C5B29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.honne.appTests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/honne.app/honne";
+			};
+			name = Debug;
+		};
+		5D281C68DF545CA7E3A08217 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = QU3AK7Q6AH;
+				INFOPLIST_FILE = honne/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tomoyaokubo.honne;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A47442BD0368E22D7F88B7DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = honne/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.honne.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		A71B5F6110F4EFBB722182FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.honne.appTests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/honne.app/honne";
+			};
+			name = Release;
+		};
+		A756B0181283C2BEDF1514E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = QU3AK7Q6AH;
+				INFOPLIST_FILE = honne/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tomoyaokubo.honne;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D95D625A89B9C37152FC54A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = honne/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.honne.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		26B6B9919C117EAF7C4A31FE /* Build configuration list for PBXNativeTarget "honne" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D281C68DF545CA7E3A08217 /* Debug */,
+				A756B0181283C2BEDF1514E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		4071DD992E49F858E7D012B8 /* Build configuration list for PBXProject "honne" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D95D625A89B9C37152FC54A9 /* Debug */,
+				A47442BD0368E22D7F88B7DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D41FCE01FF8932F61FAF4966 /* Build configuration list for PBXNativeTarget "honneTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				37ACBF1E60D816F69D1C5B29 /* Debug */,
+				A71B5F6110F4EFBB722182FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B748A5432F52BBE3004A3894 /* XCRemoteSwiftPackageReference "supabase-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/supabase/supabase-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.5.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+	};
+	rootObject = 6DDE49FD5117894CCAE3C890 /* Project object */;
+}
