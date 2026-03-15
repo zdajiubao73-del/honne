@@ -1,0 +1,7 @@
+This app does not require user login or account creation. All features are accessible immediately after launch.
+
+The app provides AI-powered emotional chat with immersive situational backgrounds. Free tier includes 3 situations and up to 20 messages per day. Premium subscription (via in-app purchase) unlocks all 15 situations, unlimited messages, TTS, and memory features.
+
+To test in-app purchase, please use the sandbox environment. No special credentials are required.
+
+The app uses the OpenAI API for AI responses. An internet connection is required for chat functionality.

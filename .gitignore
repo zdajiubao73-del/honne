@@ -1,8 +1,9 @@
-# === Xcode ===
-*.xcuserdata/
-*.xccheckout
-*.moved-aside
+# Xcode
+build/
+*.xcuserstate
+xcuserdata/
 DerivedData/
+*.moved-aside
 *.pbxuser
 !default.pbxuser
 *.mode1v3
@@ -11,56 +12,33 @@ DerivedData/
 !default.mode2v3
 *.perspectivev3
 !default.perspectivev3
-xcuserdata/
 
-# === Xcode Workspace ===
-*.xcworkspace/xcuserdata/
-*.xcworkspace/xcshareddata/
+# Build artifacts
+*.ipa
+*.dSYM
+*.dSYM.zip
 
-# === Xcodeスキーム（環境変数にAPIキーが含まれるため）===
-*.xcodeproj/xcshareddata/xcschemes/
+# CocoaPods
+Pods/
 
-# === SPM ===
+# Swift Package Manager
 .build/
 .swiftpm/
 
-# === ビルドキャッシュ ===
-*.resolved
-
-# === macOS ===
+# macOS
 .DS_Store
-.AppleDouble
-.LSOverride
-._*
-.Spotlight-V100
-.Trashes
+*.DS_Store
 
-# === APIキー・シークレット（絶対にコミットしない） ===
-*.env
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-Secrets.swift
-APIKeys.swift
-Config.xcconfig
-GoogleService-Info.plist
-
-# === CocoaPods ===
-Pods/
-Podfile.lock
-
-# === Fastlane ===
+# Fastlane (keep Fastfile but ignore secrets)
 fastlane/report.xml
 fastlane/Preview.html
-fastlane/screenshots/**/*.png
+fastlane/screenshots
 fastlane/test_output
 
-# === ビルド成果物 ===
-*.ipa
-*.dSYM.zip
-*.dSYM
-build/
+# Supabase temp
+supabase/.temp/
 
-# === テスト ===
-*.xcresult/
+# Environment / secrets
+.env
+*.env
+secrets.xcconfig

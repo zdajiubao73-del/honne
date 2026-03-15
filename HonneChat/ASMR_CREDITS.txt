@@ -1,0 +1,76 @@
+ASMR Sound Credits - HonneChat
+========================================
+Sounds sourced from Freesound.org
+
+asmr_crickets_wind.mp3
+  License     : CC0
+  Source      : https://freesound.org/s/275640/
+
+asmr_campfire_crackling.mp3
+  License     : CC-BY
+  Attribution : Freesound contributor on Freesound.org
+  Source      : https://freesound.org/s/620324/
+
+asmr_ocean_waves.mp3
+  License     : CC0
+  Source      : https://freesound.org/s/578524/
+
+asmr_forest_birds.mp3
+  License     : CC0
+  Source      : https://freesound.org/s/800712/
+
+asmr_river_crickets.mp3
+  License     : CC0
+  Source      : https://freesound.org/s/345144/
+
+asmr_spring_wind_birds.mp3
+  License     : CC0
+  Source      : https://freesound.org/s/781115/
+
+asmr_arctic_wind.mp3
+  License     : CC-BY
+  Attribution : cobratronik on Freesound.org
+  Source      : https://freesound.org/s/117136/
+
+asmr_rain_cafe.mp3
+  License     : CC-BY
+  Attribution : lucan8tor on Freesound.org
+  Source      : https://freesound.org/s/401873/
+  Note        : Cafe Rain Ambience (rain + cafe sounds mix, 12min)
+
+asmr_bar_ambient.mp3
+  License     : CC-BY
+  Attribution : BurghRecords on Freesound.org
+  Source      : https://freesound.org/s/415974/
+
+asmr_snow_fireplace.mp3
+  License     : CC-BY
+  Attribution : Freesound contributor on Freesound.org
+  Source      : https://freesound.org/s/680856/
+
+asmr_library_quiet.mp3
+  License     : CC0
+  Source      : https://freesound.org/s/765173/
+
+asmr_hot_spring.mp3
+  License     : CC0
+  Source      : https://freesound.org/s/829622/
+
+asmr_city_wind.mp3
+  License     : CC-BY
+  Attribution : Freesound contributor on Freesound.org
+  Source      : https://freesound.org/s/686064/
+
+asmr_train_rumble.mp3
+  License     : CC0
+  Source      : https://freesound.org/s/419478/
+
+asmr_festival_crowd.mp3
+  License     : CC-BY
+  Attribution : Freesound contributor on Freesound.org
+  Source      : https://freesound.org/s/746444/
+
+asmr_spaceship_hum.mp3
+  License     : CC0
+  Source      : https://freesound.org/s/638442/
+

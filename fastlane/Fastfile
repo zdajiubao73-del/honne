@@ -1,0 +1,84 @@
+default_platform(:ios)
+
+APP_IDENTIFIER = "com.honnechat.app"
+APP_NAME       = "HonneChat"
+SCHEME         = "HonneChat"
+XCODEPROJ      = "HonneChat.xcodeproj"
+
+platform :ios do
+
+  # ─────────────────────────────────────────
+  # STEP 1: App Store Connect にアプリを登録
+  # ─────────────────────────────────────────
+  desc "App Store Connect にアプリを新規登録"
+  lane :create_app do
+    produce(
+      app_identifier: APP_IDENTIFIER,
+      app_name:       APP_NAME,
+      language:       "Japanese",
+      app_version:    "1.0",
+      sku:            "honnechat-001",
+      enable_services: {}
+    )
+    UI.success "✅ アプリの登録が完了しました"
+  end
+
+  # ─────────────────────────────────────────
+  # STEP 2: TestFlight にアップロード
+  # ─────────────────────────────────────────
+  desc "ビルドして TestFlight にアップロード"
+  lane :beta do
+    increment_build_number(xcodeproj: XCODEPROJ)
+
+    build_app(
+      scheme:        SCHEME,
+      project:       XCODEPROJ,
+      export_method: "app-store",
+      clean:         true
+    )
+
+    upload_to_testflight(
+      skip_waiting_for_build_processing: true
+    )
+
+    UI.success "✅ TestFlight へのアップロードが完了しました"
+  end
+
+  # ─────────────────────────────────────────
+  # STEP 3: App Store 審査提出
+  # ─────────────────────────────────────────
+  desc "App Store に審査提出"
+  lane :release do
+    upload_to_app_store(
+      app_identifier:     APP_IDENTIFIER,
+      skip_binary_upload: true,
+      submit_for_review:  true,
+      automatic_release:  true,
+      submission_information: {
+        add_id_info_uses_idfa:                       false,
+        add_id_info_serves_ads:                      false,
+        add_id_info_tracks_action:                   false,
+        add_id_info_tracks_install:                  false,
+        add_id_info_limits_tracking:                 false,
+        export_compliance_uses_encryption:           true,
+        export_compliance_is_exempt:                 true,
+        content_rights_has_rights:                   true,
+        content_rights_contains_third_party_content: false
+      },
+      force: true
+    )
+
+    UI.success "✅ App Store への審査提出が完了しました"
+  end
+
+  # ─────────────────────────────────────────
+  # 全ステップを一括実行
+  # ─────────────────────────────────────────
+  desc "アプリ登録 → TestFlight → 審査提出 を一括実行"
+  lane :ship do
+    create_app
+    beta
+    release
+  end
+
+end
